@@ -2,8 +2,8 @@
 from django.shortcuts import render
 from django.views.generic import View, ListView, FormView, DetailView
 from django.urls import reverse_lazy
-from visit.models import Visit, Room
-from visit.forms import 
+from .models import deposit, terms, rate, interest
+
 
 def index(request):
     return render(
