@@ -15,7 +15,7 @@ def index(request):
 elif reguest.method == 'POST':
     return HttpResponse('Incoming request')
 
-clas DepositView(View):
+class DepositView(View):
     
     def multiplier(request):
 
