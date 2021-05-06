@@ -2,13 +2,22 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "input.html")
+    return render(
+    reguest=request, 
+    template_name= 'deposit/'input.html',
+    context={},
+      )
 
-def multiplier(request):
+elif reguest.method == 'POST':
+    return HttpResponse('Incoming request')
 
-    num1 = request.POST['num1']
-    num2 = request.POST['num2']
-    num3 = request.POST['num3']
+clas DepositView(View):
+    
+    def multiplier(request):
+
+        num1 = request.POST['num1']
+        num2 = request.POST['num2']
+         num3 = request.POST['num3']
 
     if num1.isdigit() and num2.isdigit() and num3.isdigit():
         a = int(num1)
