@@ -1,5 +1,9 @@
 
 from django.shortcuts import render
+from django.views.generic import View, ListView, FormView, DetailView
+from django.urls import reverse_lazy
+from visit.models import Visit, Room
+from visit.forms import 
 
 def index(request):
     return render(
